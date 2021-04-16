@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="menu inline-block">
+        <h2>Menu</h2>
+        <button onclick="fechar()" class="menu-button">Fechar</button>
+        <ul>
+            <li>Início</li>
+            <li>Usuários</li>
+            <li>Clientes</li>
+            <li>Vendas</li>
+            <li>Sair</li>
+        </ul>
+    </nav>
+    <main class="principal inline-block">
+        <div>
+            <button onclick="abrir()" class="menu-button">Abrir</button>
+        </div>
+        <h1>Cadastro de Cliente</h1>
+        <form>
+            <div class="campo">
+                <input id="nome" type="text" placeholder="Nome Completo">
+            </div>
+            <div class="campo">
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <button type="button" onclick="salvar()">Salvar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

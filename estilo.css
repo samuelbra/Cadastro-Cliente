@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.menu {
+    width: 30%;
+    background-color: aquamarine;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+    transition: width ease 0.3s;
+}
+.menu-button {
+    display: none;
+}
+
+.principal {
+    width: 70%;
+    padding: 20px;
+    height: 2000px;
+    float: right;
+}
+
+input {
+    border: none
+}
+
+.campo {
+    border: 1px solid gray;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .menu {
+        padding: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+    .principal {
+        width: 100%;
+    }
+    .menu-aberto {
+        width: 80%;
+        padding: 20px;
+    }
+    .menu-button {
+        display: block;
+    }
+}
